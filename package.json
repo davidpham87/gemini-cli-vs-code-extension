@@ -34,8 +34,22 @@
         "title": "Gemini: Paste to Editor"
       },
       {
-        "command": "gemini-cli-vs-code-tools.signalAndPaste",
-        "title": "Gemini: Signal /copy & Paste"
+        "command": "gemini-cli-vs-code-tools.pasteLastResult",
+        "title": "Gemini: Paste Last Result"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gemini-cli-vs-code-tools.sendSubsection",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.pasteLastResult",
+        "key": "ctrl+alt+e",
+        "mac": "cmd+alt+e",
+        "when": "editorTextFocus"
       }
     ],
     "configuration": {
