@@ -19,12 +19,12 @@ This extension allows you to configure the command used to launch the terminal.
 
 ## Commands
 
-*   `Gemini: Launch Terminal` (`gemini-tools.launchTerminal`)
-*   `Gemini: Send Selection` (`gemini-tools.sendSelection`)
-*   `Gemini: Send Subsection` (`gemini-tools.sendSubsection`)
-*   `Gemini: Send Enter` (`gemini-tools.sendEnter`)
-*   `Gemini: Paste to Editor` (`gemini-tools.pasteClipboard`)
-*   `Gemini: Signal /copy & Paste` (`gemini-tools.signalAndPaste`)
+*   `Gemini: Launch Terminal` (`gemini-cli-vs-code-tools.launchTerminal`)
+*   `Gemini: Send Selection` (`gemini-cli-vs-code-tools.sendSelection`)
+*   `Gemini: Send Subsection` (`gemini-cli-vs-code-tools.sendSubsection`)
+*   `Gemini: Send Enter` (`gemini-cli-vs-code-tools.sendEnter`)
+*   `Gemini: Paste to Editor` (`gemini-cli-vs-code-tools.pasteClipboard`)
+*   `Gemini: Signal /copy & Paste` (`gemini-cli-vs-code-tools.signalAndPaste`)
 
 ## Requirements
 
