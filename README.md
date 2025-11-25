@@ -10,7 +10,7 @@ potential code
 import * as vscode from 'vscode';
 
 // The specific name for our AI terminals
-const TERM_NAME = "*Gemini*";
+const TERM_NAME = "*gemini-cli*";
 
 // Style for the "Flash" effect (Lime green, semi-transparent)
 const flashDecorationType = vscode.window.createTextEditorDecorationType({
