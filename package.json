@@ -1,11 +1,82 @@
-{"contributes": {
+{
+  "name": "geminiCliVsExtension",
+  "displayName": "Gemini CLI VS Extension",
+  "description": "A VS Code extension to integrate Gemini CLI with the editor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
     "commands": [
-        { "command": "gemini-tools.launchTerminal", "title": "Gemini: Launch Terminal" },
-        { "command": "gemini-tools.sendSelection", "title": "Gemini: Send Selection" },
-        { "command": "gemini-tools.sendSubsection", "title": "Gemini: Send Subsection" },
-        { "command": "gemini-tools.sendEnter", "title": "Gemini: Send Enter" },
-        { "command": "gemini-tools.pasteClipboard", "title": "Gemini: Paste to Editor" },
-        { "command": "gemini-tools.signalAndPaste", "title": "Gemini: Signal /copy & Paste" }
-    ]
-}
+      {
+        "command": "gemini-cli-vs-code-tools.launchTerminal",
+        "title": "Gemini: Launch Terminal"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.sendSelection",
+        "title": "Gemini: Send Selection"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.sendSubsection",
+        "title": "Gemini: Send Subsection"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.sendEnter",
+        "title": "Gemini: Send Enter"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.pasteClipboard",
+        "title": "Gemini: Paste to Editor"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.pasteLastResult",
+        "title": "Gemini: Paste Last Result"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gemini-cli-vs-code-tools.sendSubsection",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "gemini-cli-vs-code-tools.pasteLastResult",
+        "key": "ctrl+alt+e",
+        "mac": "cmd+alt+e",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Gemini CLI VS Extension",
+      "properties": {
+        "geminiCliVsExtension.shellPath": {
+          "type": "string",
+          "default": "gemini",
+          "description": "The command or path to launch the Gemini CLI."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "xvfb-run vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "mocha": "^11.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.3"
+  }
 }
