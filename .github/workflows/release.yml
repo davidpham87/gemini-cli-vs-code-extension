@@ -2,8 +2,8 @@ name: Publish VS Code Extension
 
 on:
   push:
-    branches:
-      - main # Or the branch you use for releases
+    tags:
+      - 'v*'
 
 jobs:
   publish:
