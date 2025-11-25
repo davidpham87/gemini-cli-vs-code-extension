@@ -1,0 +1,11 @@
+{"contributes": {
+    "commands": [
+        { "command": "gemini-tools.launchTerminal", "title": "Gemini: Launch Terminal" },
+        { "command": "gemini-tools.sendSelection", "title": "Gemini: Send Selection" },
+        { "command": "gemini-tools.sendSubsection", "title": "Gemini: Send Subsection" },
+        { "command": "gemini-tools.sendEnter", "title": "Gemini: Send Enter" },
+        { "command": "gemini-tools.pasteClipboard", "title": "Gemini: Paste to Editor" },
+        { "command": "gemini-tools.signalAndPaste", "title": "Gemini: Signal /copy & Paste" }
+    ]
+}
+}
