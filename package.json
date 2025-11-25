@@ -2,6 +2,10 @@
   "name": "geminiCliVsExtension",
   "displayName": "Gemini CLI VS Extension",
   "description": "A VS Code extension to integrate Gemini CLI with the editor.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidpham87/gemini-cli-vs-code-extension.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"
