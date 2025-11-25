@@ -87,7 +87,7 @@ export function registerCommands(context: vscode.ExtensionContext) {
     });
 
     // --- COMMAND 6: Signal /copy and Paste ---
-    let cmdSignalAndPaste = vscode.commands.registerCommand('gemini-cli-vs-code-tools.signalAndPaste', async () => {
+    let cmdPasteLastResult = vscode.commands.registerCommand('gemini-cli-vs-code-tools.pasteLastResult', async () => {
         const term = getGeminiTerminal();
         const editor = vscode.window.activeTextEditor;
 
@@ -113,7 +113,7 @@ export function registerCommands(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(
         cmdLaunch, cmdSendSubsection, cmdSendSelection,
-        cmdSendEnter, cmdPaste, cmdSignalAndPaste,
+        cmdSendEnter, cmdPaste, cmdPasteLastResult,
         flashDecorationType
     );
 }

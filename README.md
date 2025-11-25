@@ -24,7 +24,12 @@ This extension allows you to configure the command used to launch the terminal.
 *   `Gemini: Send Subsection` (`gemini-cli-vs-code-tools.sendSubsection`)
 *   `Gemini: Send Enter` (`gemini-cli-vs-code-tools.sendEnter`)
 *   `Gemini: Paste to Editor` (`gemini-cli-vs-code-tools.pasteClipboard`)
-*   `Gemini: Signal /copy & Paste` (`gemini-cli-vs-code-tools.signalAndPaste`)
+*   `Gemini: Paste Last Result` (`gemini-cli-vs-code-tools.pasteLastResult`) - Sends `/copy` to terminal, then pastes clipboard.
+
+## Keybindings
+
+*   `Ctrl+Alt+X`: Send Subsection
+*   `Ctrl+Alt+E`: Paste Last Result
 
 ## Requirements
 
